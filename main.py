@@ -1,5 +1,5 @@
 from pyscript import document
-import time
+import timeit
 import random
     
 def randomGrid(col, row) -> list:
@@ -9,7 +9,7 @@ def randomGrid(col, row) -> list:
         for _ in range(row)
     ]
 
-def solution():
+def solution(maximum_product):
     """
     Generate a random grid of integers and find maximun product of 4 intergers in a row, column, or diagonal.
     """
@@ -45,12 +45,13 @@ def solution():
             product = grid[i][j] * grid[i + 1][j - 1] * grid[i + 2][j - 2] * grid[i + 3][j - 3]
             if product > max_product:
                 max_product = product
-    return max_product, grid
+    maximum_product = max_product
+    return
 
 def translate_english(event):
-    input_text = document.querySelector("#english")
+    
     
     output_div = document.querySelector("#output")
-    start = time.time()
-    max_product, grid = solution()
-    output_div.innerText = f"{max_product}" + f" in {time.time() - start:.2f} seconds \n" + f"{grid}"
+    max_product = 0
+    time_taken = timeit.timeit(lambda: solution(max_product), number=1)
+    output_div.innerText = f"{max_product}" + f" in {time_taken:.2f} seconds \n"
