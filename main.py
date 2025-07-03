@@ -49,7 +49,7 @@ def solution():
 
 def translate_english(event):
     input_text = document.querySelector("#english")
-    english = input_text.value
+    
     output_div = document.querySelector("#output")
     start = time.time()
     max_product, grid = solution()
