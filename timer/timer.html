@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width,initial-scale=1" />
+      <title>🦜 Timing with calculations PyScript</title>
+      <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.1/core.css">
+      <script type="module" src="https://pyscript.net/releases/2025.7.1/core.js"></script>
+  </head>
+  <body>
+    <h1>Timing seconds (computation time) by computing the largest product of four integers in a 2000x2000 grid</h1>
+    <p>Push to start clock</p>
+    
+    <button py-click="start">Start</button>
+    <button py-click="stop">Stop</button>
+    <div id="output"></div>
+    <script type="py" src="./main.py" config="./pyscript.json"></script>
+  </body>
+</html>
+
