@@ -63,8 +63,8 @@ async def start(event) -> None:
     running = True
     current_count = 0
     wall_clock = 0
-    col = 2000
-    row = 2000
+    col = 800
+    row = 800
 
     grid = randomGrid(col, row)
     while running:
