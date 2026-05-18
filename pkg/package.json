@@ -1,0 +1,24 @@
+{
+  "name": "blackhole",
+  "type": "module",
+  "collaborators": [
+    "Marshall <marshallinch@gmail.com>"
+  ],
+  "description": "A 2d blackhole simulation with wasm-pack adapted from https://github.com/kavan010/black_hole",
+  "version": "0.1.0",
+  "license": "MIT/Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iammarshallnz/hello-wasm"
+  },
+  "files": [
+    "blackhole_bg.wasm",
+    "blackhole.js",
+    "blackhole.d.ts"
+  ],
+  "main": "blackhole.js",
+  "types": "blackhole.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}
